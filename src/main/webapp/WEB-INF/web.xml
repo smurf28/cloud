@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1"
+         metadata-complete="true">
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>ImageAction</servlet-name>
+  	<display-name>ImageAction</display-name>
+  	<description></description>
+  	<servlet-class>com.lhl.photo.action.ImageAction</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UserAction</servlet-name>
+  	<display-name>UserAction</display-name>
+  	<description></description>
+  	<servlet-class>com.lhl.photo.action.UserAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ImageAction</servlet-name>
+  	<url-pattern>/ImageAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UserAction</servlet-name>
+  	<url-pattern>/UserAction</url-pattern>
+  </servlet-mapping>
+</web-app>
